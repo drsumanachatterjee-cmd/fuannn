@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Sunayan Correct Route</title>
+
+    <!-- IMPORTANT for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -9,7 +11,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
         }
 
         iframe {
@@ -25,19 +27,40 @@
 
         .btn {
             display: block;
-            margin: 10px;
+            margin: 10px auto;
             padding: 15px;
-            background: #2e7d32;
-            color: white;
-            text-decoration: none;
             font-size: 18px;
+            width: 90%;
+            max-width: 400px;
+            border: none;
             border-radius: 8px;
+            background-color: #007BFF;
+            color: white;
         }
     </style>
 </head>
 
 <body>
 
-<!-- MAP (SATELLITE VIEW) -->
-<iframe 
-src="https://www.google.com/maps?q=22.5265,88.
+<!-- MAP -->
+<iframe
+src="https://www.google.com/maps?q=22.5205,88.1325&z=18&output=embed">
+</iframe>
+
+<!-- BUTTONS -->
+<div class="buttons">
+
+    <!-- U-TURN -->
+    <a href="https://www.google.com/maps/dir/?api=1&destination=22.5205,88.1325">
+        <button class="btn">Go to U-Turn Point</button>
+    </a>
+
+    <!-- FINAL LOCATION -->
+    <a href="https://www.google.com/maps/dir/?api=1&destination=22.5212,88.1330">
+        <button class="btn">Go to Final Location</button>
+    </a>
+
+</div>
+
+</body>
+</html>
