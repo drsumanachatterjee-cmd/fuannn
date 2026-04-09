@@ -1,26 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sunayan Route</title>
+    <title>Sunayan Advanced Eye Institute Route</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .important {
+            color: red;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: block;
+            margin: 15px auto;
+            padding: 15px;
+            background: #2e7d32;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .map-container {
+            margin-top: 15px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
 </head>
 
-<body style="font-family: Arial; text-align:center; padding:20px;">
+<body>
+
+<div class="card">
 
 <h2>Sunayan Advanced Eye Institute, Bagnan</h2>
 
-<p style="color:red; font-weight:bold;">
-IMPORTANT: Please follow the route exactly. The direct turn is blocked.
+<p class="important">
+IMPORTANT: Follow the instructions carefully. Do NOT take direct turn from highway.
 </p>
 
 <p>
-This navigation is set to guide you via the correct U-turn and service road.
+Once you locate the institute on the opposite side of the road, continue straight on the highway.
 </p>
 
-<a href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=Sunayan+Advanced+Eye+Institute+Bagnan+Howrah&waypoints=22.4709,87.9840&travelmode=driving"
-style="display:block; margin:20px auto; padding:15px; background:green; color:white; text-decoration:none; font-size:18px; border-radius:8px; width:90%; max-width:400px;">
-🚗 Start Navigation
+<p>
+Proceed ahead and enter the <b>Bagnan Service Road</b>. Then take a U-turn from the <b>second signal near Bagnan crossing</b> and come back to reach the institute safely.
+</p>
+
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=Sunayan+Advanced+Eye+Institute+Bagnan+Howrah&travelmode=driving">
+🚗 Start Navigation (Live Location)
 </a>
+
+<div class="map-container">
+<iframe 
+src="https://www.google.com/maps?q=Sunayan+Advanced+Eye+Institute+Bagnan+Howrah&output=embed">
+</iframe>
+</div>
+
+</div>
 
 </body>
 </html>
